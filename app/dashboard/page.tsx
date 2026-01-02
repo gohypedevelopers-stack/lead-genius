@@ -9,7 +9,7 @@ export default function DashboardPage() {
         <Sidebar />
 
         {/* Content */}
-        <section className="min-h-screen flex-1 px-6 py-6">
+        <section className="h-screen flex-1 overflow-y-auto px-6 py-6">
           {/* Top bar */}
           <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
             <div>
