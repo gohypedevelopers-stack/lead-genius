@@ -149,26 +149,33 @@ export default function LeadExtractionPage() {
                 href="/dashboard/extraction/social-engagement"
               />
 
-              <MethodCard
-                icon={<UsersIcon />}
-                title="Groups Scraper"
-                desc="Scrape member lists from industry-specific professional groups and communities automatically."
-                buttonText="Start Extraction"
-              />
+           <MethodCard
+  icon={<UsersIcon />}
+  title="Groups Scraper"
+  desc="Scrape member lists from industry-specific professional groups and communities automatically."
+  buttonText="Start Extraction"
+  href="/dashboard/extraction/group-engagement"
+/>
+
+
 
               <MethodCard
-                icon={<SearchIcon />}
-                title="Basic Search"
-                desc="Find leads using boolean search, specific job titles, location data, and industry filters."
-                buttonText="Start Extraction"
-              />
+  icon={<SearchIcon />}
+  title="Basic Search"
+  desc="Find leads using boolean search, specific job titles, location data, and industry filters."
+  buttonText="Start Extraction"
+  href="/dashboard/extraction/lead-sourcing"
+/>
+
 
               <MethodCard
-                icon={<FileIcon />}
-                title="CSV Upload"
-                desc="Enrich your existing data. Upload a list of domains or names for deep analysis."
-                buttonText="Upload File"
-              />
+  icon={<FileIcon />}
+  title="CSV Upload"
+  desc="Enrich your existing data. Upload a list of domains or names for deep analysis."
+  buttonText="Start Extraction"
+  href="/dashboard/extraction/lead-sourcing"
+/>
+
             </div>
           </div>
 
