@@ -20,7 +20,7 @@ export default function LoginPage() {
               </div>
             </div>
             <div className="text-sm font-semibold text-white/90">
-              LeadGenius
+              LeadGeniuss
             </div>
           </div>
 
