@@ -19,7 +19,7 @@ export default function SocialEngagementExtractionPage() {
         <section className="flex-1 px-8 py-7">
           {/* Breadcrumb */}
           <div className="text-xs text-white/45">
-            Home <span className="px-1">/</span> Lead Discovery{" "}
+            Home <span className="px-1">/</span> Lead Extraction{" "}
             <span className="px-1">/</span>{" "}
             <span className="text-blue-400">Social Engagement</span>
           </div>

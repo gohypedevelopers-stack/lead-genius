@@ -49,6 +49,13 @@ export default function LeadSourcingPage() {
               </div>
             </div>
           </div>
+          <div className="px-3 py-3">
+            {/* Breadcrumb */}
+            <div className="text-xs text-white/75">
+              Home /{" "}
+              <span className="text-xs text-white/75">Lead Extraction /{" "}</span>
+              <span className="text-xs text-white/75">Lead Sourcing</span>
+            </div> </div>
 
           {/* Header */}
           <div className="mt-7 flex flex-col gap-4 lg:flex-row lg:items-end lg:justify-between">
@@ -57,7 +64,8 @@ export default function LeadSourcingPage() {
                 Lead Sourcing
               </h1>
               <p className="mt-2 text-sm text-white/55">
-                Find, enrich, and score high-intent leads using multi-channel intelligence.
+                Find, enrich, and score high-intent leads using multi-channel
+                intelligence.
               </p>
 
               {/* Tabs */}
@@ -74,7 +82,11 @@ export default function LeadSourcingPage() {
 
             <div className="flex items-center gap-8">
               <Metric label="CREDITS LEFT" value="2,450" />
-              <Metric label="LEADS FOUND" value="14.2k" valueClass="text-blue-400" />
+              <Metric
+                label="LEADS FOUND"
+                value="14.2k"
+                valueClass="text-blue-400"
+              />
             </div>
           </div>
 
@@ -193,7 +205,9 @@ export default function LeadSourcingPage() {
                   <div className="flex items-center gap-2 text-xs text-white/55">
                     <span className="text-yellow-300">⚡</span>
                     Estimated Reach:{" "}
-                    <span className="font-semibold text-white/85">~12,000+</span>{" "}
+                    <span className="font-semibold text-white/85">
+                      ~12,000+
+                    </span>{" "}
                     candidates
                   </div>
 
@@ -240,8 +254,15 @@ export default function LeadSourcingPage() {
                 </div>
 
                 <div className="mt-4 space-y-3">
-                  <SavedCard title="Q3 SaaS Founders" meta="Created 2 days ago • 145 leads" tag="New" />
-                  <SavedCard title="NYC Marketing VP" meta="Synced 4 hours ago • 52 leads" />
+                  <SavedCard
+                    title="Q3 SaaS Founders"
+                    meta="Created 2 days ago • 145 leads"
+                    tag="New"
+                  />
+                  <SavedCard
+                    title="NYC Marketing VP"
+                    meta="Synced 4 hours ago • 52 leads"
+                  />
                 </div>
               </div>
 
@@ -286,18 +307,20 @@ function Tab({
     <button
       type="button"
       className={[
-        "inline-flex items-center gap-2 pb-3 transition",
+        "relative inline-flex items-center gap-2 pb-3 transition", // ✅ relative added
         active ? "text-white" : "text-white/55 hover:text-white/80",
       ].join(" ")}
     >
       <span className={active ? "text-white/80" : "text-white/40"}>{icon}</span>
       <span className="font-medium">{children}</span>
+
       {active ? (
-        <span className="absolute mt-9 h-[2px] w-[120px] bg-blue-500/80" />
+        <span className="absolute bottom-0 left-0 h-[2px] w-full rounded bg-blue-500/80" />
       ) : null}
     </button>
   );
 }
+
 
 function Metric({
   label,

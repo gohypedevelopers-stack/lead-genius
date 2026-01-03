@@ -12,6 +12,7 @@ export default function GroupsScraperPage() {
       <div className="flex">
         <Sidebar />
 
+
         {/* Page content */}
         <section className="h-screen flex-1 overflow-y-auto">
           {/* Top search bar */}
@@ -57,7 +58,8 @@ export default function GroupsScraperPage() {
           <div className="px-6 py-6">
             {/* Breadcrumb */}
             <div className="text-xs text-white/45">
-              Campaigns <span className="px-1">›</span>{" "}
+              Home /{" "}
+              <span className="text-white/75">Lead Extraction /{" "}</span>
               <span className="text-white/75">Groups Engagement</span>
             </div>
 
